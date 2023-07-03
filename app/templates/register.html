@@ -19,39 +19,31 @@
         <form action="{% url "register" %}" method="POST" class="row g-3">
           {% csrf_token %}
             <div class="col-md-6">
-              <label for="" class="form-label">First Name</label>
-              <input type="first_name" class="form-control" id="">
+              <label for="first_name" class="form-label">First Name</label>
+              <input name="first_name" type="text" class="form-control" id="">
             </div>
             <div class="col-md-6">
               <label for="" class="form-label">Last Name</label>
-              <input type="last_name" class="form-control" id="">
+              <input name="last_name" type="text" class="form-control" id="">
             </div>
             <div class="col-md-6">
               <label for="" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <input name="email" type="email" class="form-control" id="inputEmail4">
             </div>
             <div class="col-md-6">
               <label for="" class="form-label">UserName</label>
-              <input type="username" class="form-control" id="">
+              <input name="username" type="username" class="form-control" id="">
             </div>
             <div class="col-md-6">
               <label for="" class="form-label">Password</label>
-              <input type="password" class="form-control" id="">
+              <input name="password" type="password" class="form-control" id="">
             </div>
             <div class="col-md-6">
               <label for="" class="form-label">Confirm password</label>
-              <input type="confirm_password" class="form-control" id="">
+              <input name="confirm_password" type="password" class="form-control" id="">
             </div>
             <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-success btn-lg">Sign in</button>
+              <button type="submit" class="btn btn-success btn-lg">Create account</button>
             </div>
           </form>
 
