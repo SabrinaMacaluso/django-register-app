@@ -1,2 +1,7 @@
-file1
-file2
+db.sqlite3
+manage.py
+
+__pycache__
+asgi.py
+__init__.py
+wsgi.py
