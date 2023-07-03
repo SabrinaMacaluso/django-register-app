@@ -5,3 +5,9 @@ __pycache__
 asgi.py
 __init__.py
 wsgi.py
+
+admin.py
+apps.py 
+models.py
+tests.py
+
