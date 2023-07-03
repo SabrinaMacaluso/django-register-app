@@ -1,2 +1,2 @@
 # django-register-app
-first commit
+second commit
