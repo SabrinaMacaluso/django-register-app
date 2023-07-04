@@ -8,3 +8,8 @@ python manage.py runserver
 ```
 
 To access the app: http://127.0.0.1:8000/
+
+
+![im0407202301](https://github.com/SabrinaMacaluso/django-register-app/assets/104983001/e4d6ca25-ba50-44cd-93a8-d57ad9f0e8e0)
+![im0407202302](https://github.com/SabrinaMacaluso/django-register-app/assets/104983001/efc22c16-3b4e-458b-ac82-980e2549d14d)
+![im0407202303](https://github.com/SabrinaMacaluso/django-register-app/assets/104983001/5bd0ba2e-79d0-4a24-b6e1-d1f1484ca175)
