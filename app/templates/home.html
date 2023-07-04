@@ -54,7 +54,10 @@
       <div class="col-sm-6 content-container">
           <!-- Content area -->
           <h1 class="text-center">Welcome to my app</h1>
+
+          {% if not request.user.is_authenticated %}
           <h1 class="text-center">Sign in to Continue.</h1>
+          {% endif %}
           {% if request.user.is_authenticated %}
           <p class="h6 text-success">You are Logged In</p>
           <p >Username: {{ request.user.username }}</p>
