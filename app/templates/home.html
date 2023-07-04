@@ -42,7 +42,6 @@
 <!-- As a heading -->
 <nav class="navbar bg-dark navbar-dark">
   <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">NavBar</span>
   </div>
 </nav>
 
@@ -58,16 +57,17 @@
           <h1 class="text-center">Sign in to Continue.</h1>
           {% if request.user.is_authenticated %}
           <p class="h6 text-success">You are Logged In</p>
-          <p class="h6 text-success">Username: {{ request.user.username }}</p>
-          <p class="text-info">First Name: {{ request.user.first_name }}</p>
-          <p class="text-info">Last Name: {{ request.user.last_name }}</p>
-          <a href={% url 'logout_user' %} class="btn btn-success btn-lg">Log out</a>
+          <p >Username: {{ request.user.username }}</p>
+          <p >First Name: {{ request.user.first_name }}</p>
+          <p>Last Name: {{ request.user.last_name }}</p>
+          <a href={% url 'logout_user' %} type="button" class="btn btn-secondary">Log out</a>
           {% else %}
           <p class="text-danger">User is not logged in.</p>
           <p>Don't have an account? <a href={% url 'register' %} style="color: black;">Create an account</a></p>
           <p>It takes only a minute.</p>
-          {% endif %}
           <a href={% url 'login_user' %} type="button" class="btn btn-secondary">Sign in</a>
+          {% endif %}
+          
       </div>
       <div class="col-sm-3 side-container">
           <!-- Side area content goes here -->
