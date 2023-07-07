@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+    volumes:
+      - dbdata:/var/lib/postgresql/data/
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-django-app-image
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_NAME=mydatabase
+      - DB_USER=myuser
+      - DB_PASSWORD=mypassword
+
+volumes:
+  dbdata:
