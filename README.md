@@ -7,7 +7,22 @@ django-admin startapp app
 python manage.py runserver
 ```
 
+Build the Docker image and start the application:
+
+```bash
+docker-compose up
+```
+
+Run Django migrations to setup your database:
+
+```bash
+docker exec -it <your_web_container_id> python manage.py migrate
+```
+
 To access the app: http://127.0.0.1:8000/
+
+
+
 
 
 ![im0407202301](https://github.com/SabrinaMacaluso/django-register-app/assets/104983001/e4d6ca25-ba50-44cd-93a8-d57ad9f0e8e0)
