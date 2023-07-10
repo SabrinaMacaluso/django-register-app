@@ -29,6 +29,12 @@ docker exec -it <your_postgres_container_id> bash
 psql -U myuser -d mydatabase
 ```
 
+To see the user registration details:
+
+```SQL
+SELECT * FROM auth_user;
+```
+
 
 
 
