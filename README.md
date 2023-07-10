@@ -22,6 +22,15 @@ docker exec -it <your_web_container_id> python manage.py migrate
 To access the app: http://127.0.0.1:8000/
 
 
+Access the PostgreSQL container:
+
+```bash
+docker exec -it <your_postgres_container_id> bash
+psql -U myuser -d mydatabase
+```
+
+
+
 
 
 
