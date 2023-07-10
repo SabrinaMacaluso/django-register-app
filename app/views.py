@@ -51,3 +51,7 @@ def login_user(request):
 def logout_user(request):
     auth.logout(request)
     return redirect('home')
+
+
+def contact(request):
+    return render(request, 'contact.html')
